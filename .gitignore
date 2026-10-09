@@ -1,0 +1,9 @@
+# Hugo 生成的静态文件，由 Cloudflare Pages 构建时生成
+/public/
+
+# 系统/编辑器
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/

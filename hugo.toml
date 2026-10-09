@@ -1,0 +1,66 @@
+baseURL = 'https://example.org/'
+locale = 'zh-cn'
+title = '我的博客'
+theme = 'PaperMod'
+enableRobotsTXT = true
+enableEmoji = true
+pygmentsUseClasses = true
+
+[params]
+  env = 'production'
+  description = '用 Hugo + PaperMod 搭建的个人博客'
+  author = '博主'
+  defaultTheme = 'auto'
+  disableThemeToggle = false
+  ShowReadingTime = true
+  ShowShareButtons = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowWordCount = true
+  ShowRssButtonInSectionTermList = true
+  UseHugoToc = true
+  displayFullLangName = true
+  ShowLastModified = true
+
+  [params.homeInfoParams]
+    Title = '你好 👋'
+    Content = '欢迎来到我的博客，这里使用 Hugo 与 PaperMod 主题构建。'
+
+  [params.profileMode]
+    enabled = false
+
+  [[params.socialIcons]]
+    name = 'github'
+    url = 'https://github.com/'
+
+  [params.assets]
+    disableHLJS = true
+
+[[menu.main]]
+    identifier = 'home'
+    name = '首页'
+    url = '/'
+    weight = 1
+  [[menu.main]]
+    identifier = 'archive'
+    name = '归档'
+    url = '/archives/'
+    weight = 2
+  [[menu.main]]
+    identifier = 'about'
+    name = '关于'
+    url = '/about/'
+    weight = 3
+  [[menu.main]]
+    identifier = 'search'
+    name = '搜索'
+    url = '/search/'
+    weight = 4
+
+[outputs]
+  home = ['HTML', 'RSS', 'JSON']
+
+[taxonomies]
+  category = 'categories'
+  tag = 'tags'
